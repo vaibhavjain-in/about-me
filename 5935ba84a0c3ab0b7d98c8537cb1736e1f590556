@@ -1,0 +1,25 @@
+favicon.svg
+  0efd1534722b59fe 1-14
+index.html
+  0efd1534722b59fe 7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.5",
+  "base_commit_sha": "5935ba84a0c3ab0b7d98c8537cb1736e1f590556",
+  "prompts": {
+    "0efd1534722b59fe": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "066eec3d-ea28-4e74-ae32-6858b841ee3d",
+        "model": "composer-2"
+      },
+      "human_author": "Vaibhav Jain",
+      "messages": [],
+      "total_additions": 26,
+      "total_deletions": 11,
+      "accepted_lines": 15,
+      "overriden_lines": 0
+    }
+  }
+}
