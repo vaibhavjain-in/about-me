@@ -1,0 +1,23 @@
+index.html
+  0efd1534722b59fe 229-234,275-279,281-283,285-288,290-292,295,316-319,321-335
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.5",
+  "base_commit_sha": "a3ac79ba7c640c34a5bcad277c5e3b1dd529e873",
+  "prompts": {
+    "0efd1534722b59fe": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "066eec3d-ea28-4e74-ae32-6858b841ee3d",
+        "model": "composer-2"
+      },
+      "human_author": "Vaibhav Jain",
+      "messages": [],
+      "total_additions": 42,
+      "total_deletions": 8,
+      "accepted_lines": 41,
+      "overriden_lines": 1
+    }
+  }
+}
