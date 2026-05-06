@@ -1,0 +1,14 @@
+index.html
+  h_69a38ff6d188d6 341
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.1",
+  "base_commit_sha": "c328b892524549481e953f755677b4f81922d080",
+  "prompts": {},
+  "humans": {
+    "h_69a38ff6d188d6": {
+      "author": "Vaibhav Jain <vaibhav_jain@mckinsey.com>"
+    }
+  }
+}
