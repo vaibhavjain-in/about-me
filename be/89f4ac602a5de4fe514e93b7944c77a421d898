@@ -1,0 +1,26 @@
+index.html
+  s_c473a4e3478ef9::t_37c283a5f460ef 244-250
+.gitignore
+  s_c473a4e3478ef9::t_758b350409b358 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "be89f4ac602a5de4fe514e93b7944c77a421d898",
+  "prompts": {},
+  "humans": {
+    "h_69a38ff6d188d6": {
+      "author": "Vaibhav Jain <vaibhav_jain@mckinsey.com>"
+    }
+  },
+  "sessions": {
+    "s_c473a4e3478ef9": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "76828554-5709-4145-85b0-a8f541400a50",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Vaibhav Jain <vaibhav_jain@mckinsey.com>"
+    }
+  }
+}
