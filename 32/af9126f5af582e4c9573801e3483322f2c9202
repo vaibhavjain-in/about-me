@@ -1,0 +1,53 @@
+.gitignore
+  s_e4c2413930bf50::t_17076fb238fad9 3
+index.html
+  s_fceefbc8b0a4bb::t_1577c8f454078c 422,424
+  s_fceefbc8b0a4bb::t_470cbcd6629aab 451,457-458
+  s_fceefbc8b0a4bb::t_076311a972058f 507-509,512
+  s_fceefbc8b0a4bb::t_8a5b6936e9c3fd 527-529,532,537-539,542
+  s_fceefbc8b0a4bb::t_84309db7b67eae 419-421,425-439,441-443,449-450,452-456,459-465,467-484,486,489-498
+  s_fceefbc8b0a4bb::t_8debb198e932d9 466,485
+  s_fceefbc8b0a4bb::t_b2e7373000fc9a 423
+  s_fceefbc8b0a4bb::t_12d4d450bff4e8 444-448
+  s_fceefbc8b0a4bb::t_643792aa16f39e 127,131,137-141,144-145,148-150,153-154,157,160,163-194,197-208,211,215-216,219-220,222
+  s_fceefbc8b0a4bb::t_03002dc9123713 414-418,440,487-488,499
+  s_7b92de73bdfa1c::t_410aca7195ad74 330-335
+  s_fceefbc8b0a4bb::t_2fe1a7c42b7555 124-126,128-130,132-136,142-143,146-147,151-152,155-156,158-159,161-162,195-196,209-210,212-214,217-218,221,223
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "32af9126f5af582e4c9573801e3483322f2c9202",
+  "prompts": {},
+  "humans": {
+    "h_69a38ff6d188d6": {
+      "author": "Vaibhav Jain <vaibhav_jain@mckinsey.com>"
+    }
+  },
+  "sessions": {
+    "s_7b92de73bdfa1c": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "1ac43989-f987-45dd-84cf-204ca8c518fc",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Vaibhav Jain <vaibhav_jain@mckinsey.com>"
+    },
+    "s_e4c2413930bf50": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1786168402692",
+        "model": "unknown"
+      },
+      "human_author": "Vaibhav Jain <vaibhav_jain@mckinsey.com>"
+    },
+    "s_fceefbc8b0a4bb": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "16baa5de-3402-4e0a-b111-98d75162b0fd",
+        "model": "unknown"
+      },
+      "human_author": "Vaibhav Jain <vaibhav_jain@mckinsey.com>"
+    }
+  }
+}
