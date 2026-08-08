@@ -121,6 +121,106 @@
       font-weight: 500;
     }
 
+    /* ── Certifications ── */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .cert-provider {
+      background: linear-gradient(135deg, #f5f7fa 0%, #fff 100%);
+      border: 2px solid #3b82f6;
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: box-shadow .2s, transform .2s;
+      cursor: pointer;
+    }
+    .cert-provider:hover { box-shadow: 0 6px 24px rgba(59, 130, 246, .15); }
+
+    .cert-provider-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      user-select: none;
+    }
+
+    .cert-provider-icon {
+      font-size: 2.5rem;
+      flex-shrink: 0;
+    }
+
+    .cert-provider-info h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1e3a5f;
+      margin: 0;
+    }
+
+    .cert-provider-info .count {
+      font-size: .85rem;
+      color: #4a5568;
+      margin-top: .25rem;
+    }
+
+    .cert-expand-icon {
+      margin-left: auto;
+      font-size: 1.25rem;
+      transition: transform .3s;
+      flex-shrink: 0;
+    }
+
+    .cert-provider.expanded .cert-expand-icon {
+      transform: rotate(180deg);
+    }
+
+    .cert-list {
+      display: none;
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid #e2e8f0;
+      list-style: none;
+    }
+
+    .cert-provider.expanded .cert-list {
+      display: block;
+    }
+
+    .cert-item {
+      padding: .75rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .cert-item:not(:last-child) {
+      border-bottom: 1px solid #f0f4f8;
+      padding-bottom: .75rem;
+    }
+
+    .cert-name {
+      font-size: .95rem;
+      font-weight: 500;
+      color: #2d3748;
+    }
+
+    .cert-item a {
+      display: inline-flex;
+      align-items: center;
+      gap: .3rem;
+      background: #3b82f6;
+      color: #fff;
+      border-radius: 6px;
+      padding: .4rem .8rem;
+      font-size: .85rem;
+      font-weight: 600;
+      transition: background .2s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .cert-item a:hover { background: #2563eb; text-decoration: none; }
+
     /* ── Open Source Projects ── */
     .projects-grid {
       display: grid;
@@ -227,6 +327,12 @@
       </svg>
       LinkedIn
     </a>
+    <a href="https://x.com/vaibhavjain_in" target="_blank" rel="noopener noreferrer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
+      X
+    </a>
     <a href="https://www.drupal.org/u/vaibhavjain" target="_blank" rel="noopener noreferrer">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path d="M15.78 5.113C14.09 3.425 12.48 1.815 11.998 0c-.48 1.815-2.09 3.425-3.778 5.113-2.534 2.53-5.405 5.4-5.405 9.702a9.184 9.185 0 1018.368 0c0-4.303-2.871-7.171-5.405-9.702M6.72 16.954c-.563-.019-2.64-3.6 1.215-7.416l2.55 2.788a.218.218 0 01-.016.325c-.61.625-3.204 3.227-3.527 4.126-.066.186-.164.18-.222.177M12 21.677a3.158 3.158 0 01-3.158-3.159 3.291 3.291 0 01.787-2.087c.57-.696 2.37-2.655 2.37-2.655s1.774 1.988 2.367 2.649a3.09 3.09 0 01.792 2.093A3.158 3.158 0 0112 21.677m6.046-5.123c-.068.15-.223.398-.431.405-.371.014-.411-.177-.686-.583-.604-.892-5.864-6.39-6.848-7.455-.866-.935-.122-1.595.223-1.94C10.736 6.547 12 5.285 12 5.285s3.766 3.574 5.336 6.016c1.57 2.443 1.029 4.556.71 5.253"/>
@@ -305,20 +411,105 @@
       </div>
     </section>
 
+    <!-- ═══════════════════ CERTIFICATIONS ═══════════════════ -->
+    <section id="certifications" aria-labelledby="certifications-heading">
+      <h2 id="certifications-heading">Certifications</h2>
+      <div class="cert-grid">
+
+        <!-- AWS Provider Card -->
+        <div class="cert-provider" data-provider="aws">
+          <div class="cert-provider-header">
+            <div class="cert-provider-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Amazon_Web_Services_2025.svg" alt="AWS Logo" style="width: 40px; height: 40px;">
+            </div>
+            <div class="cert-provider-info">
+              <h3>Amazon Web Services</h3>
+              <p class="count">1 Certification</p>
+            </div>
+            <span class="cert-expand-icon">▼</span>
+          </div>
+          <ul class="cert-list">
+            <li class="cert-item">
+              <span class="cert-name">AWS Certified Solutions Architect – Associate</span>
+              <a href="https://www.credly.com/badges/4e67df6c-af41-4e61-92d1-ccc949b37ba2/public_url" target="_blank" rel="noopener noreferrer">
+                View
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Drupal Provider Card -->
+        <div class="cert-provider" data-provider="drupal">
+          <div class="cert-provider-header">
+            <div class="cert-provider-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="color: #0077c0;">
+                <path d="M15.78 5.113C14.09 3.425 12.48 1.815 11.998 0c-.48 1.815-2.09 3.425-3.778 5.113-2.534 2.53-5.405 5.4-5.405 9.702a9.184 9.185 0 1018.368 0c0-4.303-2.871-7.171-5.405-9.702M6.72 16.954c-.563-.019-2.64-3.6 1.215-7.416l2.55 2.788a.218.218 0 01-.016.325c-.61.625-3.204 3.227-3.527 4.126-.066.186-.164.18-.222.177M12 21.677a3.158 3.158 0 01-3.158-3.159 3.291 3.291 0 01.787-2.087c.57-.696 2.37-2.655 2.37-2.655s1.774 1.988 2.367 2.649a3.09 3.09 0 01.792 2.093A3.158 3.158 0 0112 21.677m6.046-5.123c-.068.15-.223.398-.431.405-.371.014-.411-.177-.686-.583-.604-.892-5.864-6.39-6.848-7.455-.866-.935-.122-1.595.223-1.94C10.736 6.547 12 5.285 12 5.285s3.766 3.574 5.336 6.016c1.57 2.443 1.029 4.556.71 5.253"/>
+              </svg>
+            </div>
+            <div class="cert-provider-info">
+              <h3>Drupal</h3>
+              <p class="count">Acquia Certified</p>
+            </div>
+            <span class="cert-expand-icon">▼</span>
+          </div>
+          <ul class="cert-list">
+            <li class="cert-item">
+              <span class="cert-name">View Certification Profile</span>
+              <a href="https://certification.acquia.com/person/certified/vaibhav-jain" target="_blank" rel="noopener noreferrer">
+                View
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Anthropic Provider Card -->
+        <!-- ✏️  Uncomment when ready to add Anthropic certifications
+        <div class="cert-provider" data-provider="anthropic">
+          <div class="cert-provider-header">
+            <div class="cert-provider-icon">🤖</div>
+            <div class="cert-provider-info">
+              <h3>Anthropic</h3>
+              <p class="count">Certifications</p>
+            </div>
+            <span class="cert-expand-icon">▼</span>
+          </div>
+          <ul class="cert-list">
+            <li class="cert-item">
+              <span class="cert-name">Anthropic Certification (to be added)</span>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                View
+              </a>
+            </li>
+          </ul>
+        </div>
+        -->
+
+      </div>
+    </section>
+    
+    <script>
+      document.querySelectorAll('.cert-provider').forEach(card => {
+        card.addEventListener('click', function(e) {
+          if (e.target.tagName !== 'A') {
+            this.classList.toggle('expanded');
+          }
+        });
+      });
+    </script>
+
     <!-- ═══════════════════ Contributions ═══════════════════ -->
     <section id="projects" aria-labelledby="projects-heading">
       <h2 id="projects-heading">Open Source Contributions</h2>
       <div class="projects-grid">
 
-        <!-- ✏️  Duplicate/modify each card for your own projects -->
         <article class="project-card">
           <h3>
-            <span class="repo-icon" aria-hidden="true">📦</span>
-            <a href="https://github.com/vaibhavjain-in/streamlit_samples" target="_blank" rel="noopener noreferrer">
-              Streamlit Samples
+            <span class="repo-icon" aria-hidden="true">📚</span>
+            <a href="https://github.com/vaibhavjain-in/ai-learnings" target="_blank" rel="noopener noreferrer">
+              AI Learnings
             </a>
           </h3>
-          <p>This repository contains simple Streamlit app samples to help you get started with interactive Python web apps.</p>
+          <p>Personal notes and docs on AI tools, prompt engineering, context optimization, and AI workflows.</p>
         </article>
 
         <article class="project-card">
@@ -333,22 +524,22 @@
 
         <article class="project-card">
           <h3>
-            <span class="repo-icon" aria-hidden="true">📦</span>
-            <a href="https://github.com/vaibhavjain-in/cursor-learning" target="_blank" rel="noopener noreferrer">
-              Cursor Learnings
-            </a>
-          </h3>
-          <p>Personal notes and docs on using Cursor as an AI coding tool and as an IDE—workflows, settings, and migration tips.</p>
-        </article>
-
-        <article class="project-card">
-          <h3>
             <span class="repo-icon" aria-hidden="true">🔀</span>
             <a href="https://github.com/vaibhavjain-in/gh-wt" target="_blank" rel="noopener noreferrer">
               GitHub CLI Worktree Extension
             </a>
           </h3>
           <p>GitHub CLI extension to manage git worktrees with GitHub-aware conveniences—mirrors git worktree subcommands and supports checking out PRs into new worktrees.</p>
+        </article>
+
+        <article class="project-card">
+          <h3>
+            <span class="repo-icon" aria-hidden="true">📦</span>
+            <a href="https://github.com/vaibhavjain-in/streamlit_samples" target="_blank" rel="noopener noreferrer">
+              Streamlit Samples
+            </a>
+          </h3>
+          <p>This repository contains simple Streamlit app samples to help you get started with interactive Python web apps.</p>
         </article>
 
       </div>
